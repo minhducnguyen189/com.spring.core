@@ -3,6 +3,7 @@ package com.spring.core.spring.dependency.injection;
 public class EnglishCoach implements Coach {
 
     private final ExaminationService examinationService;
+    private String teamEmail;
 
     public EnglishCoach(ExaminationService examinationService) {
         this.examinationService = examinationService;
@@ -18,4 +19,15 @@ public class EnglishCoach implements Coach {
         return this.examinationService.getExamination();
     }
 
+    public ExaminationService getExaminationService() {
+        return examinationService;
+    }
+
+    public String getTeamEmail() {
+        return teamEmail;
+    }
+
+    public void setTeamEmail(String teamEmail) {
+        this.teamEmail = teamEmail;
+    }
 }

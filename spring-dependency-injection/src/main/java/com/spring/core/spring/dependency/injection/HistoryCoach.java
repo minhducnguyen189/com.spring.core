@@ -2,6 +2,7 @@ package com.spring.core.spring.dependency.injection;
 
 public class HistoryCoach implements Coach {
 
+    private String teamEmail;
     private ExaminationService examinationService;
 
     public void setExaminationService(ExaminationService examinationService) {
@@ -18,4 +19,11 @@ public class HistoryCoach implements Coach {
         return this.examinationService.getExamination();
     }
 
+    public String getTeamEmail() {
+        return teamEmail;
+    }
+
+    public void setTeamEmail(String teamEmail) {
+        this.teamEmail = teamEmail;
+    }
 }
