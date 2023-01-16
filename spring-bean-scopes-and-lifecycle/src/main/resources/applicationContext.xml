@@ -8,13 +8,21 @@
     http://www.springframework.org/schema/context/spring-context.xsd">
 
     <bean id="englishCoach"
-          class="com.spring.core.spring.bean.scopes.and.lifecycle.EnglishCoach">
+          class="com.spring.core.spring.bean.scopes.and.lifecycle.EnglishCoach"
+          init-method="initAdHocMethod"
+          destroy-method="destroyAdHocMethod">
 
     </bean>
 
     <bean id="historyCoach"
           class="com.spring.core.spring.bean.scopes.and.lifecycle.HistoryCoach"
           scope="prototype">
+    </bean>
+
+
+    <bean id="customBeanProcessor"
+          class="com.spring.core.spring.bean.scopes.and.lifecycle.CustomBeanProcessor">
+
     </bean>
 
 </beans>
