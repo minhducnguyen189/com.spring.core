@@ -13,6 +13,7 @@
         <module>spring-dependency-injection</module>
         <module>spring-bean-scopes-and-lifecycle</module>
         <module>spring-inversion-of-control-annotation</module>
+        <module>spring-dependency-injection-annotation</module>
     </modules>
 
     <properties>
