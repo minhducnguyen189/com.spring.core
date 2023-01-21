@@ -7,8 +7,10 @@ public class SpringApplication {
 
         ClassPathXmlApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
 
+        //retrieve bean from the spring container
         Coach englishCoach = context.getBean("englishCoach", Coach.class);
 
+        //use the bean
         System.out.println(englishCoach.getDailyHomeWork());
 
         context.close();
