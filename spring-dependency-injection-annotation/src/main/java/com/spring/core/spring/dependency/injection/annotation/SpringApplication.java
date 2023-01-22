@@ -12,12 +12,15 @@ public class SpringApplication {
         //Get bean from container
         Coach englishCoach = context.getBean("englishCoach", Coach.class);
         Coach historyCoach = context.getBean("historyCoach", Coach.class);
+        Coach scienceCoach = context.getBean("scienceCoach", Coach.class);
 
         //use beans
         System.out.println(englishCoach.getDailyHomeWork());
         System.out.println(englishCoach.getExamination());
         System.out.println(historyCoach.getDailyHomeWork());
         System.out.println(historyCoach.getExamination());
+        System.out.println(scienceCoach.getDailyHomeWork());
+        System.out.println(scienceCoach.getExamination());
 
         //close container
         context.close();
