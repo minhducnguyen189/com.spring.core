@@ -2,12 +2,16 @@ package com.spring.core.spring.dependency.injection.annotation;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Qualifier;
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Component;
 
 @Component
 public class EnglishCoach implements Coach {
 
     private final ExaminationService examinationService;
+
+    @Value("${coach.team.english.email}")
+    private String teamEmail;
 
     @Autowired
     public EnglishCoach(@Qualifier("englishExaminationService") ExaminationService examinationService) {
@@ -22,6 +26,10 @@ public class EnglishCoach implements Coach {
     @Override
     public String getExamination() {
         return this.examinationService.getExamination();
+    }
+
+    public String getTeamEmail() {
+        return teamEmail;
     }
 
 }

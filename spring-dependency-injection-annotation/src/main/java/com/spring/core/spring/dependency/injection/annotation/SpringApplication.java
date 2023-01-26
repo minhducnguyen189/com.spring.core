@@ -14,6 +14,9 @@ public class SpringApplication {
         Coach historyCoach = context.getBean("historyCoach", Coach.class);
         Coach scienceCoach = context.getBean("scienceCoach", Coach.class);
 
+        EnglishCoach englishCoachDetail = context.getBean("englishCoach", EnglishCoach.class);
+        HistoryCoach historyCoachDetail = context.getBean("historyCoach", HistoryCoach.class);
+
         //use beans
         System.out.println(englishCoach.getDailyHomeWork());
         System.out.println(englishCoach.getExamination());
@@ -21,6 +24,9 @@ public class SpringApplication {
         System.out.println(historyCoach.getExamination());
         System.out.println(scienceCoach.getDailyHomeWork());
         System.out.println(scienceCoach.getExamination());
+
+        System.out.println(englishCoachDetail.getTeamEmail());
+        System.out.println(historyCoachDetail.getTeamEmail());
 
         //close container
         context.close();
