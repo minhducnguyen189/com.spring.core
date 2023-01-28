@@ -15,6 +15,7 @@
         <module>spring-inversion-of-control-annotation</module>
         <module>spring-dependency-injection-annotation</module>
         <module>spring-bean-scopes-and-lifecycle-annotation</module>
+        <module>spring-inversion-of-control-java-source-code</module>
     </modules>
 
     <properties>
