@@ -32,4 +32,7 @@ public class EnglishCoach implements Coach {
         return teamEmail;
     }
 
+    public void setTeamEmail(String teamEmail) {
+        this.teamEmail = teamEmail;
+    }
 }
