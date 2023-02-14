@@ -1,8 +1,13 @@
 package com.spring.core.spring.dependency.injection.java.source.code;
 
+import org.springframework.beans.factory.annotation.Value;
+
 public class HistoryCoach implements Coach {
 
     private ExaminationService examinationService;
+
+    @Value("${coach.team.history.email}")
+    private String teamEmail;
 
     @Override
     public String getDailyHomeWork() {
@@ -17,4 +22,9 @@ public class HistoryCoach implements Coach {
     public void setExaminationService(ExaminationService examinationService) {
         this.examinationService = examinationService;
     }
+
+    public String getTeamEmail() {
+        return teamEmail;
+    }
+
 }
