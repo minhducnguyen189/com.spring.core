@@ -17,6 +17,7 @@
         <module>spring-bean-scopes-and-lifecycle-annotation</module>
         <module>spring-inversion-of-control-java-source-code</module>
         <module>spring-dependency-injection-java-source-code</module>
+        <module>spring-mvc-xml-configuration</module>
     </modules>
 
     <properties>
