@@ -18,6 +18,7 @@
         <module>spring-inversion-of-control-java-source-code</module>
         <module>spring-dependency-injection-java-source-code</module>
         <module>spring-mvc-xml-configuration</module>
+        <module>spring-mvc-java-based-configuration</module>
     </modules>
 
     <properties>
